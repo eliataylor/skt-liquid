@@ -142,16 +142,6 @@
                       {%- endif -%}
                     </div>
                   {%- endif -%}
-                  {% if collection.metafields.custom.starting_price != blank %}
-                    <div class="collection-starting_price">
-                      <p class="starting_price">{{ collection.metafields.custom.starting_price }}</p>
-                    </div>
-                  {% endif %}
-                  {% if product.metafields.custom.daily_price_display != blank %}
-                    <div class="collection-starting_price">
-                      <p class="starting_price">{{ product.metafields.custom.daily_price_display }}</p>
-                    </div>
-                  {% endif %}
                   {%- unless placeholder -%}
                     <div {{ block.shopify_attributes }}>
                       {%- form 'product', product -%}
